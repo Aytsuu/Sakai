@@ -279,8 +279,9 @@ sakai/                                  # Root monorepo
 │   │   ├── ai/                         # Demand aggregator, nudge engine, anomaly detector (rule-based)
 │   │   ├── llm/                        # Gemini API wrapper: parse_destination.py, generate_nudge.py, classify_deviation.py
 │   │   ├── safety/                     # Safety zone CRUD and voting logic
-│   │   └── admin/                      # LGU-specific endpoints and alert triggers
-│   ├── main.py                         # FastAPI app factory, router registration
+│   │   ├── admin/                      # LGU-specific endpoints and alert triggers
+│   │   ├── config.py                   # Global configurations
+│   │   └── main.py                     # FastAPI app factory, router registration
 │   └── alembic/                        # DB migrations
 ├── web/                                # Next.js Admin Dashboard (App Router)
 │   ├── app/                            # App routes: /dashboard, /map, /alerts
@@ -291,7 +292,6 @@ sakai/                                  # Root monorepo
 │   │   ├── driver/                     # DriverMap, SessionSetup, Nudges
 │   │   └── commuter/                   # Search, RouteSelect, LoadingZone, LiveMap
 │   └── hooks/                          # useLocation, useWebSocket, useDriverMode
-└── shared/                             # Shared TypeScript types (route codes, vehicle types)
 ```
 
 ---
@@ -331,7 +331,7 @@ The following sprint plan prioritizes a working end-to-end demo over feature com
 
 ---
 
-## 12. Post-Hackathon Scalability Path
+## 12. Scalability Path
 
 The architecture is intentionally designed so the monolith can be decomposed without rewriting business logic. Each FastAPI module maps 1:1 to a potential future microservice.
 
