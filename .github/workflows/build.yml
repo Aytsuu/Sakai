@@ -1,12 +1,14 @@
 name: Build Services
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]  
+  workflow_dispatch: # Temporarily disabled automatic triggers
+  # push:
+  #   branches: [main, master]
+  # pull_request:
+  #   branches: [main, master]  
 jobs:
   web:
+    if: false # Prevent job from running even if manually triggered
     runs-on: ubuntu-latest
     defaults:
       run:
