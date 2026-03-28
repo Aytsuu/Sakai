@@ -101,6 +101,25 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📜 License
+## 📚 Documentation
 
-Distributed under the MIT License. See `LICENSE` for more information.
+- **[System Architecture](docs/SYSTEM_ARCHITECTURE.md)** - System architecture and design
+- **[User Workflow](docs/USER_WORKFLOW.md)** - Project planning and management
+
+### Service-Specific Documentation
+
+- [Backend API Documentation](Sakai/README.md)
+- [Frontend Documentation](Sakai/README.md)
+- [AI Service Documentation](Sakai/README.md)
+
+## 🔒 Security & Privacy
+
+- End-to-end encryption for sensitive communications
+- JWT-based authentication with secure token rotation
+- Role-based access control (Admin, Driver, Commuter)
+- Regular security audits and vulnerability assessments
+- Privacy-by-design architecture principles
+
+---
+
+_This README is maintained and updated regularly to reflect current project status and deployment procedures._
