@@ -33,7 +33,7 @@ This is a monorepo containing three main applications:
 | --------- | ----------- | ----- |
 | 🌐 [`/web`](./web) | Commuter and admin web application. | Next.js, React, Tailwind CSS |
 | 📱 [`/mobile`](./mobile) | Mobile app for on-the-go commuters and drivers. | React Native, Expo |
-| ⚙️ [`/backend`](./backend) | Core API and AI services. | Python, Database + Alembic, Docker |
+| ⚙️ [`/backend`](./backend) | Core API and AI services. | FastAPI, Python, Database + Alembic, Docker |
 
 ## 🛠️ Tech Stack
 
@@ -47,6 +47,7 @@ This is a monorepo containing three main applications:
 * **Language:** TypeScript
 
 ### Backend
+* **Framework:** FastAPI
 * **Language:** Python
 * **Database Migrations:** Alembic
 * **Infrastructure:** Docker & Docker Compose
